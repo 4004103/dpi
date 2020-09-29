@@ -1,0 +1,745 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="imagetoolbar" content="no"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>한국DPI는  | 한국장애인연맹</title>
+	<script type="text/javascript">
+	//접속 기기 확인 후 해당 버전으로 
+	   var mobile_keys = new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+	   if(document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
+	   for(i in mobile_keys){
+		if(navigator.userAgent.match(mobile_keys[i]) != null){
+		 location.href = "../dpi/mobile/sub01.html"; // 모바일 홈 연결 주소
+		 break;
+		}
+	   }
+	</script>
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/vb_style.css">
+<link rel="stylesheet" href="./css/default_layout.css"> 
+<link rel="stylesheet" href="./css/default_top_menu.css">
+<link rel="stylesheet" href="./css/default_board.css">
+<link rel="stylesheet" href="./css/default_contents.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<!--[if lte IE 8]>
+<script src="https://dpikorea.org/js/html5.js"></script>
+<![endif]-->
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="./js/jquery.menu.js"></script>
+<script src="./js/common.js?ver=171222"></script>
+<script src="./js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="./js/jquery.rwdImageMaps.min.js"></script> <!-- map.js -->
+
+</head>
+
+<style type="text/css">
+
+	#main_container{width:100%;}
+
+	/* 게시판   color */
+	.tbl_head01 a:hover {color:#c9332e}
+
+	#container_title_sub ul li a:hover{color:#c9332e}
+	#bo_gall .gall_text_href a:hover{color:#c9332e}
+
+	/*cate color head.sub.php*/
+	#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {color:#c9332e}
+	#bo_cate a{background:#fafafa;border:1px solid #ddd;color:#474747;}
+	#bo_cate_on {border-color:#c9332e !important;color:#c9332e !important;}
+
+	a:hover{color:#c9332e} /* Link rollover color */
+	#tnb {} /* Top tnb color */
+	#tnb .tnb_admin a{color:#c9332e;}
+
+	/* Main menu color */
+	.gnb_1da {color:#fff;}
+	.gnb_1da:hover{color:#d9d9d9 !important}
+	.gnb_1dli .on a{color:#c9332e !important}
+
+	/* Category color */
+	#container_title_sub .on{color:#c9332e;}
+	#con_wrap{border-bottom:4px dotted #c9332e;}
+
+	/*연혁*/
+	.year{font-size: 25px; color: #c9332e;}
+	.year:after{border:5px solid #c9332e;}
+
+	/* 컨텐츠 스타일 */
+	.view_bo_con img{max-width:835px}
+</style>
+
+<body> 
+<script type="text/javascript">
+$(function(){
+    //slide way
+    var $nav = $("#gnb")
+    var $nav_list = $(".gnb_1dli > a");
+    $nav_list.on("mouseover focus", function(e) {
+        $nav.addClass("on");
+    });
+    $nav.on("mouseleave", function(e) {
+        $nav.removeClass("on");
+    });
+    $(".gnb_2dli:last > a").on("blur", function() {
+        $nav.removeClass("on");
+    });
+});
+</script>
+
+<!-- 상단 시작 { -->
+<div id ="hd_wrap">
+	<div id="hd">
+		<h1 id="hd_h1">한국DPI는 </h1>
+
+		           <div id="skip_to_container"><a href="#container_in">본문 바로가기</a></div>
+
+				<div id="tnb_wrap">
+			<div id="logo">
+                <a href="javascript:;"><img src="./img/logo.png" alt="사단법인 한국장애인연맹(DPI) Disabled People's International Korea"></a>
+			</div>
+			<div id="tnb">
+				<ul>
+										<li><a href="javascript:;"><b>로그인</b></a></li>
+					<li><a href="javascript:;">회원가입</a></li>
+									</ul>
+			</div>
+		</div>
+		<div id="hd_wrapper">
+			
+<nav id="gnb">
+	<h2>메인메뉴</h2>
+	<div class="gnb_wrap">
+		<ul id="gnb_1dul">
+						<li class="gnb_1dli " style="z-index:999">
+				<a href="javascript:;" target="_self" class="gnb_1da ">한국DPI는</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 한국DPI는</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 지역연맹</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 가맹</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 오시는길</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:998">
+				<a href="javascript:;" target="_self" class="gnb_1da ">사업소개</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 사업소개</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:997">
+				<a href="javascript:;" target="_self" class="gnb_1da ">활동과이슈</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 공지사항</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 활동소식</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 포토갤러리</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 장애계 주요이슈</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:996">
+				<a href="javascript:;" target="_self" class="gnb_1da ">커뮤니티</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 자유게시판</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 자료실</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:995">
+				<a href="javascript:;" target="_self" class="gnb_1da ">참여</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 회원안내 및 가입</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 후원안내 및 가입</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 지역연맹 후원안내</a></li>
+				</ul>
+			</li>
+					</ul>
+		<div id="gnb_all">
+			<h2>전체메뉴</h2>
+			<ul class="gnb_al_ul">
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">한국DPI는</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 한국DPI는</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 지역연맹</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 가맹</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 오시는길</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">사업소개</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 사업소개</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">활동과이슈</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 공지사항</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 활동소식</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 포토갤러리</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 장애계 주요이슈</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">커뮤니티</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 자유게시판</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 자료실</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">참여</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 회원안내 및 가입</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 후원안내 및 가입</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 지역연맹 후원안내</a></li>
+					</ul>
+				</li>
+							</ul>
+			<button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+		</div>
+	</div>
+</nav>		</div>
+
+	</div>
+</div>
+<!-- } 상단 끝 -->
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+<div id="wrapper">
+	<div id="container_wr">
+
+	<!-- 왼쪽 메뉴  시작 -->
+					<div id="aside">
+				<div class="sub-menu-wr">
+					<div class="sub-menu_tit">
+						<span class="sub-menu_group">한국DPI</span>
+								<ul class="sub-menu_list">
+									<li class="sub-menu_item_on">
+										<a href="javascript:;" target="_self" class="sub-menu_on">한국DPI는</a>
+									</li>
+																	<li class="sub-menu_item">
+										<a href="javascript:;" target="_self" class="sub-menu">지역연맹</a>
+									</li>
+																	<li class="sub-menu_item">
+										<a href="javascript:;" target="_self" class="sub-menu">가맹</a>
+									</li>
+																	<li class="sub-menu_item">
+										<a href="javascript:;" target="_self" class="sub-menu">오시는길</a>
+									</li>
+								</ul>
+						</div>
+
+																							</div>
+				</div>
+			<!-- 왼쪽 메뉴 끝 -->
+
+<!-- 한국DPI는 시작 { -->
+			<div id="container_in">
+								<div id="con_wrap">
+						<h2 id="container_title">한국DPI는</h2>
+						<nav class="location">
+							<a href="javascript:;" class="home"><img src="./img/home.png" alt="홈으로"><span class="sound_only">홈으로</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;한국DPI&nbsp;&nbsp;>&nbsp;&nbsp;<span class="c_red">한국DPI는</span>
+						</nav>
+					</div>
+
+	<article id="bo_v" style="width:100%">
+
+		<!-- 게시판 카테고리 시작 { -->
+			 <nav id="bo_cate">
+			<h2>한국DPI는 카테고리</h2>
+					<ul id="bo_cate_ul">
+				<li style="width:279px"><a  href="javascript:;" id='bo_cate_on' >한국DPI는</a></li>
+				<li style="width:279px"><a  href="javascript:;">연혁</a></li>
+				<li style="width:279px"><a  href="javascript:;">함께하는 사람들</a></li>
+			</ul>
+			
+		</nav>
+			<!-- } 게시판 카테고리 끝 -->
+
+		<div class='view_bo_con b01'><div class="con-gap1 b01-1_tit">
+		<span class="block">장애인의 완전한</span>
+		<strong class="block c-red">사회참여와 기회균등을</strong>
+		<span class="block"><strong class="c-red">목표로</strong> 최선을 다하겠습니다.</span>
+	</div>
+
+	<div class="con-gap1 b01-1">
+		<h3 class="s1hd"><span class="c-red">DPI</span> (Disabled Peoples’ International : 국제장애인연맹)은...</h3>
+		<p>1980년 캐나다 위니펙시에서 개최되었던 RI(Rehabilitation International : 국제재활협회) 세계대회에 참가했던 세계 각 국의 장애인당사자 250여명에 의하여 태동되어, 1981년 51개국 4백여명의 장애인이 참석한 가운데 싱가포르에서 제1회 세계장애인 대회를 가짐으로써 정식으로 출범한 국제적인 장애인당사자 조직이다. DPI는 장애인 문제에 관한 장애인당사자들의 목소리를 알리고자 장애인에 의한 독자적인 조직으로 출범하였다. DPI의 이념은 세계의 항구적인 평화의 기초가 되는 사회정의와 '장애인의 완전한 사회참여와 기회균등'을 실현하며, 장애인을 장애인에게 필요한 물리적 환경, 사회보건환경, 교육환경, 근로환경, 문화 환경 상의 모든 장벽을 제거하는데 있다. 또한 이들 모든 제도를 장애인이 이용하기 쉽게 하고, 각 국 정부가 모든 분야의 개혁과 발전계획을 수립함에 있어 장애인의 이익을 충분히 배려하고 보장하도록 촉구하는 것도 매우 중요한 역할임을 알리고 있다. DPI는 장애인의 인권신장과 장애인의 경제적, 사회적인 완전한 통합을 이루어 내고, 장애인 관련 단체에 대한 지원과 발전을 목적으로 하고 있으며, 세계인권선언, 국제인권협약, 유엔지적장애인권리선언 등 유엔의 장애인의 권리선언 내용을 실현하고자 하는 국제적인 유형별 통합 장애인당사자 인권단체이다.</p>
+	</div>
+
+	<div class="con-gap1 b01-1">
+		<h3 class="s1hd">한국<span class="c-red">DPI</span> (DPI Korea : 한국장애인연맹)은...</h3>
+		<p>'장애인의 완전한 사회참여와 기회균등' 이념의 실현을 목표로 하는 장애인당사자 인권단체로써 1986년 발족. 국제DPI의 국내 유일한 회원단체로서의 활동을 시작하였다. 장애인정책개발? 인권교육? 인식개선 활동을 통해 진보적인 장애인 관련 이념을 국내에 전파하고 실천하는데 주력하고 있으며, 제7대 조약인 국제장애인권리협약 연대단체를 구성하여 간사단체를 맡아 UN 제정 및 국내 비준을 위해 활동하였고, 국내 비준 이후 장애인권리협약의 국내 홍보 및 올바른 이행을 위한 모니터 활동을 하고 있다. 2007년에는 세계장애인한국대회를 성공적으로 개최하여 서울선언문을 공표함으로써 장애인 인권에 대해 명실상부한 국제 조직으로서의 위상을 자리 잡게 되었으며, 해외 각국의 DPI와 장애관련 국제단체와의 교류를 통해 국제 이슈에 참여하여 오피니언 리더로서의 역할을 담당하고 있다. 또한, 보다 공신력 있는 활동을 하기 위해 2002년 보건복지부 소관 비영리법인단체로 등록하였으며, 전국의 16개시도 지역연맹 설립 및 장애인 관련 단체의 가맹으로 넓히면서 지방 및 유형별 통합 장애인당사자 인권단체로서 장애인의 완전한
+		사회참여와 기회균등의 실현을 위한 활동에 주력하고 있다</p>
+	</div><div style="clear:both;">&nbsp;</div></div>
+
+		
+	</article>
+<!-- } 한국 DPI는 끝 -->
+
+
+
+<!-- 지역연맹 시작 { -->
+	<div id="container_in">
+								<div id="con_wrap">
+						<h2 id="container_title">지역연맹</h2>
+						<nav class="location">
+							<a href="https://dpikorea.org" class="home"><img src="https://dpikorea.org/theme/basic/img/home.png" alt="홈으로"><span class="sound_only">홈으로</span></a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;한국DPI&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span class="c_red">지역연맹</span>
+						</nav>
+					</div>
+				<style type="text/css">
+		.view_bo_con img{max-width:835px}
+	</style>
+
+	<article id="bo_v" style="width:100%">
+
+
+		<div class="view_bo_con b02"><div class="b02-1map-wr">
+		<div class="b02-1map">
+			<img width="493" height="672" id="maps" alt="지역연맹 지도" src="./img/b02-1map.png" usemap="#image-maps">
+			
+			<a class="modal-click" id="myBtn1" href="javascript:;" target="_self" alt="" rel="myModal1">인천</a>
+			<a class="modal-click" id="myBtn2" href="javascript:;" target="_self" alt="" rel="myModal2">서울</a>
+			<a class="modal-click" id="myBtn3" href="javascript:;" target="_self" alt="" rel="myModal3">경기</a>
+			<a class="modal-click" id="myBtn4" href="javascript:;" target="_self" alt="" rel="myModal4">강원</a>
+			<a class="modal-click" id="myBtn5" href="javascript:;" target="_self" alt="" rel="myModal5">대전</a>
+			<a class="modal-click" id="myBtn6" href="javascript:;" target="_self" alt="" rel="myModal6">전북</a>
+			<a class="modal-click" id="myBtn7" href="javascript:;" target="_self" alt="" rel="myModal7">부산</a>
+			<a class="modal-click" id="myBtn8" href="javascript:;" target="_self" alt="" rel="myModal8">제주</a>
+
+		</div>
+
+
+		<div class="modal" id="myModal1">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="인천DPI" src="./img/b02-img2-1.png"> <a class="s_btn" href="http://kko.to/shAW0MH0p" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">인천시 서구 봉수대로 1532번길 9</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">032-561-1386</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">032-566-8997</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">dpi8997@hanmail.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">문경희</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">이성철</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal2">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="서울DPI" src="./img/b02-img2-2.png"> <a class="s_btn" href="http://kko.to/r-VsjpHjB" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">서울시 강북구 오현로 207, 404동 1106호(번2동, 주공4단지)</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">02-908-7776</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">0303-0799-1758</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">dpikoreaseoul@daum.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">정종남</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">이영훈</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal3">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="경기DPI" src="./img/b02-img2-3.png"> <a class="s_btn" href="http://kko.to/Qf280MT0p" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">경기도 광주시 탄벌동 73번지 한울B/D 3층</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">031-762-4583</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">031-762-4585</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">ggdpi@daum.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">한동식</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">조효식</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal4">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="강원DPI" src="./img/b02-img2-4.png"> <a class="s_btn" href="http://kko.to/j3GtrMTjT" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">강원 강릉시 경강로 2306(포남동) 1층</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">033-641-7212</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">033-641-7213</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">dpikw@hanmail.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">이정근</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2"></span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal5">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="대전DPI" src="./img/b02-img2-5.png"> <a class="s_btn" href="http://kko.to/OS5G0pTjH" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">대전광역시 중구 보문로 246 (대흥동 452-3, 대림빌딩) 7층 708호</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">042-226-0527</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">042-226-0527</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">djdpi@naver.com</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">신석훈</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2"></span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal6">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="전북DPI" src="./img/b02-img2-6.png"> <a class="s_btn" href="http://kko.to/3oK60MTjM" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">익산시 익산대로 191 1층</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">063-852-7269</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">-<!-- 063-852-7270 --></span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">iksanil@daum.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">박정규</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">김영민</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal7">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="부산DPI" src="./img/b02-img2-7.png"> <a class="s_btn" href="http://kko.to/9siL0MH00" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">부산광역시 해운대구 센텀북대로 60(재송동, 센텀IS타워 505호)</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">051-905-8678</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">051-782-2608</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">dpibusan@gmail.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">이태성</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">이영호</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+		<div class="modal" id="myModal8">
+			<div class="modal-content">
+				<div>
+					<h4><img alt="제주DPI" src="./img/b02-img2-8.png"> <a class="s_btn" href="http://kko.to/WuRmjMT00" target="_blank">지도보기</a></h4>
+					<ul>
+						<li><span class="txt1">주&nbsp;&nbsp;&nbsp;소 : </span><span class="txt2">제주도 제주시 광양4길 32 탐라장애인종합복지관 지하1층</span></li>
+						<li><span class="txt1">전&nbsp;&nbsp;&nbsp;화 : </span><span class="txt2">064-757-9897</span></li>
+						<li><span class="txt1">팩&nbsp;&nbsp;&nbsp;스 : </span><span class="txt2">064-721-5412</span></li>
+						<li><span class="txt1">이메일 : </span><span class="txt2">jejudpi@hanmail.net</span></li>
+						<li><span class="txt1">회&nbsp;&nbsp;&nbsp;장 : </span><span class="txt2">오성진</span></li>
+						<li><span class="txt1">사무처장 : </span><span class="txt2">고민일</span></li>
+					</ul>
+				</div>
+				<button class="modal-close" aria-label="팝업닫기" tabindex="0">X</button>
+			</div>
+		</div>
+	</div><div style="clear:both;">&nbsp;</div></div>
+
+		
+	</article>
+<!-- } 지역연맹 끝 -->
+
+
+<!-- 오시는 길 시작 { -->
+	<div id="container_in">
+								<div id="con_wrap">
+						<h2 id="container_title">오시는길</h2>
+						<nav class="location">
+							<a href="javascript:;" class="home"><img src="./img/home.png" alt="홈으로"><span class="sound_only">홈으로</span></a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;한국DPI&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span class="c_red">오시는길</span>
+						</nav>
+					</div>
+				
+	<article id="bo_v" style="width:100%">
+
+	<!-- 게시판 목록 시작 { -->
+
+		<div class="view_bo_con_location b03">
+
+			<div class="location_map">
+	<!-- * 카카오맵 - 지도퍼가기 -->
+	<!-- 1. 지도 노드 -->
+	<div id="daumRoughmapContainer1574345868581" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
+
+	<!--
+		2. 설치 스크립트
+		* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+	-->
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+	<!-- 3. 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1574345868581",
+			"key" : "vxse",
+			//"mapWidth" : "640",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+
+	</div>
+			<div class="location_content">
+			<div class="location_add con-gap1">
+		<h3 class="s1hd">주소 및 연락처</h3>
+		<strong class="block c-red">주소_</strong>&nbsp;<span>서울특별시 영등포구 의사당대로 22 이룸센터 4층 405호 </span>
+		<br><br>
+		<strong class="block c-red">TEL_</strong>&nbsp;<span>02-457-0427</span>
+		<br><br>
+		<strong class="block c-red">FAX_</strong>&nbsp;<span>02-458-0429</span>
+		<br><br>
+		<strong class="block c-red">E-mail_</strong>&nbsp;<span>dpikorea@dpikorea.org</span>
+	</div>
+
+
+
+
+	<div class="location_bmw">
+		<h3 class="s1hd">교통편</h3>
+		<div class="loca_con subway">
+			<h3 class="s2hd">지하철</h3>
+			<p>지하철 9호선 국회의사당역 4번 출구로 나와서 바로 오른편에 있는 붉은색 이룸센터 빌딩 405호로 오시면 됩니다.<br>
+			지하철 엘리베이터는 4번, 5번 출구 사이에 있습니다.</p>
+		</div>
+		<div class="loca_con bus">
+			<h3 class="s2hd">노선버스</h3>
+			<strong class="block station">국회의사당 앞 하차</strong>
+			<ul class="box list_ul1 half">
+				<li class="wd50">간선버스 : 153, 162, 261, 262, 362, 461</li>
+				<li class="wd50">지선버스 : 5613, 5618, 6621, 6623, 7613</li>
+				<li class="wd50">광역버스 : 1008</li>
+				<li class="wd50">순환버스 : 61</li>
+				<li class="wd50">경기버스 : 10</li>
+			</ul>
+
+			<strong class="block station">여의도 국민은행 앞 하차</strong>
+			<ul class="box list_ul1">
+				<li>광명버스 : 9409</li>
+			</ul>
+
+			<strong class="block station">여의도 환승센터 하차(국회방면 도보 10분)</strong>
+			<ul class="box list_ul1">
+				<li>간선버스 : 160, 162, 260, 261, 262, 360, 362, 363, 461, 600, 661</li>
+				<li>지선버스 : 5012, 5612, 5618, 5623, 6623, 6628, 6630, 6633</li>
+				<li>경기버스 : 11-1, 11-2, 88, 301, 320, 510, 905, 2300, 2500, 5601</li>
+			</ul>
+		</div>
+		<div class="loca_con car">
+			<h3 class="s2hd">승용차</h3>
+			<p>네비게이션에 <strong>주소(서울특별시 영등포구 의사당대로 22</strong>) 또는 <strong>이룸센터</strong> 입력</p>
+		</div>
+	</div>		</div>
+
+		</div>
+		<div style="clear:both">&nbsp;</div>
+
+		
+	</article>
+		</div>
+<!-- } 오시는 길 끝 -->
+
+
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		//Add Inactive Class To All Accordion Headers
+		$('.question').toggleClass('inactive-header');
+
+		//Set The Accordion Content Width
+		var contentwidth = $('.question').width();
+		//$('.answer').css({'width' : contentwidth }); 사이즈 자동으로잡음
+
+		//Open The First Accordion Section When Page Loads
+		$('.question').first().toggleClass('active-header').toggleClass('inactive-header');
+		$('.answer').first().slideDown();
+
+
+        $('.question').on("click",function () {
+
+			
+                if($(this).is('.inactive-header')) {
+                    $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+                    $(this).toggleClass('active-header').toggleClass('inactive-header');
+                    $(this).next().slideToggle().toggleClass('open-content');
+                    $(this).attr("title","접기");
+                }
+
+                else {
+                    $(this).toggleClass('active-header').toggleClass('inactive-header');
+                    $(this).next().slideToggle().toggleClass('open-content');
+                    $(this).attr("title","펼치기");
+                }
+            
+		});
+
+		return false;
+	});
+
+
+
+
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+
+	$(function(){
+	$(".modal-click").on("click",function(){
+		var _target = $(this).attr("rel");
+		$("#"+_target).css("display","block");
+	});
+
+
+	$(".modal-close").on("click",function(){
+		$(".modal").css("display","none");
+	});
+
+    $(".modal-close").on("click",function() {
+       $(".modal").css("display","none");
+       $(".b02-1map").find("a.modal-click").eq($(this).parents(".modal").index()-1).focus();
+       console.log($(this).parents(".modal").index()-1);
+    });
+
+	$(".modal").on("click",function(e){
+		if($(e.target).hasClass("modal"))
+			$(".modal").css("display","none");
+	});
+
+	$(".modal-click").click(function(){
+			$(".s_btn").focus();
+	});
+});
+
+
+</script>
+
+	</div>
+</div>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+	<div class="ft_link_wr">
+		<div id="ft_link">
+			<a href="javascript:;">이용약관</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">개인정보처리방침</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">장애인차별금지법</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">찾아오시는 길</a>
+		</div>
+	</div>
+	<div id="ft_wr">
+		<div id="ft_catch">
+			<div id="ft_logo">
+                    <img src="./img/ft_logo.png" alt="한국DPI(Disabled People's International Korea)">
+            </div>
+			<div id="ft_wr2">
+				<div id="ft_add"><p>사단법인 한국장애인연맹(DPI)&nbsp; |&nbsp; 대표 : 황광식&nbsp; |&nbsp; 고유번호 : 204-82-06164</p><p>주소 : 서울특별시 영등포구 의사당대로 22 이룸센터 4층 405호&nbsp;</p><p>TEL :&nbsp; 02-457-0427&nbsp; |&nbsp; FAX : 02-458-0429&nbsp; |&nbsp; E-mail : dpikorea@dpikorea.org&nbsp; |&nbsp; 개인정보담당자 : 박지수&nbsp;</p></div>
+				<div id="ft_copy">Copyright &copy; 2019 한국장애인연맹. All rights reserved.
+								</div>
+			</div>
+			<div class="wa" style="float:right"><a href="javascript:;" ><img src="./img/wa.png" border="0" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"/></a></div>
+		</div>
+	</div>
+
+	<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+</div>
+
+<script>
+	$(function() {
+		$("#top_btn").on("click", function() {
+			$("html, body").animate({scrollTop:0}, '500');
+			return false;
+		});
+	});
+</script>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+	// 폰트 리사이즈 쿠키있으면 실행
+	font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+//모든 checkbox label에 탭인덱스 추가 (chk css none으로 체크가 안됨)
+$(function(){
+        $("input[type=checkbox] + label").attr("tabindex","0");
+});
+
+
+//모든 checkbox label에 탭인덱스 추가 (chk css none으로 체크가 안됨)
+$("input[type=checkbox] + label").on("keypress",function(){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+
+    if (keycode == 32) {
+
+
+        if ($(this).prev("input[type=checkbox]").prop('checked')) {            
+            $(this).prev("input[type=checkbox]").attr("checked",false);
+        }else{
+            $(this).prev("input[type=checkbox]").attr("checked",true);
+        }
+
+    }   
+
+    //allcheck id면 allcheck script 실행
+    var chkboxId = $(this).prev("input[type=checkbox]").attr("id");
+    
+
+    if(chkboxId == "chk_all"){
+
+        if ($(this).prev("input[type=checkbox]").prop('checked')) {
+            $("input[name^=agree]").prop('checked', true);
+        } else {
+            $("input[name^=agree]").prop('checked', false);
+        }
+
+    }
+
+    
+});
+
+
+</script>
+
+
+</body>
+</html>
+
+<!-- 사용스킨 : theme/view_board -->

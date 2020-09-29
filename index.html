@@ -1,0 +1,727 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="imagetoolbar" content="no"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>한국장애인연맹</title>
+	<script>
+	//접속 기기 확인 후 해당 버전으로 
+	   var mobile_keys = new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+	   if(document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
+	   for(i in mobile_keys){
+		if(navigator.userAgent.match(mobile_keys[i]) != null){
+		 location.href = "../dpi/mobile/index.html"; // 모바일 홈 연결 주소
+		 break;
+		}
+	   }
+	</script>
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/latest_style.css">
+<link rel="stylesheet" href="./css/default_layout.css">
+<link rel="stylesheet" href="./css/default_top_menu.css">
+<link rel="stylesheet" href="./css/default_board.css">
+<link rel="stylesheet" href="./css/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<!--[if lte IE 8]>
+<script src="https://dpikorea.org/js/html5.js"></script>
+<![endif]-->
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="./js/jquery.menu.js"></script>
+<script src="./js/common.js?ver=171222"></script>
+<script src="./js/jquery.bxslider.js"></script>
+<script src="./js/slick.js"></script>
+
+
+</head>
+
+<style type="text/css">
+
+	#main_container{width:100%;}
+
+	/* 게시판   color */
+	.tbl_head01 a:hover {color:#c9332e}
+
+	#container_title_sub ul li a:hover{color:#c9332e}
+	#bo_gall .gall_text_href a:hover{color:#c9332e}
+
+	/*cate color head.sub.php*/
+	#bo_cate a{background:#fafafa;border:1px solid #ddd;color:#474747;}
+	#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {color:#c9332e}
+	#bo_cate_on {border-color:#c9332e !important;color:#c9332e !important;}
+
+	a:hover{color:#c9332e} /* Link rollover color */
+	#tnb {} /* Top tnb color */
+	#tnb .tnb_admin a{color:#c9332e;}
+
+	/* Main menu color */
+	.gnb_1da {color:#fff;}
+	.gnb_1da:hover{color:#d9d9d9 !important}
+	.gnb_1dli .on a{color:#c9332e !important}
+
+	/* Category color */
+	#container_title_sub .on{color:#c9332e;}
+	#con_wrap{border-bottom:4px dotted #c9332e;}
+
+	/*연혁*/
+	.year{font-size: 25px; color: #c9332e;}
+	.year:after{border:5px solid #c9332e;}
+</style>
+
+<body>
+<script type="text/javascript">
+$(function(){
+    //slide way
+    var $nav = $("#gnb")
+    var $nav_list = $(".gnb_1dli > a");
+    $nav_list.on("mouseover focus", function(e) {
+        $nav.addClass("on");
+    });
+    $nav.on("mouseleave", function(e) {
+        $nav.removeClass("on");
+    });
+    $(".gnb_2dli:last > a").on("blur", function() {
+        $nav.removeClass("on");
+    });
+});
+</script>
+
+<!-- 상단 시작 { -->
+<div id ="hd_wrap">
+	<div id="hd">
+		<h1 id="hd_h1">한국장애인연맹</h1>
+
+		          <div id="skip_to_container"><a href="#m_container">본문 바로가기</a></div>
+
+
+<div id="tnb_wrap">
+			<div id="logo">
+                <a href="javascript:;"><img src="./img/logo.png" alt="사단법인 한국장애인연맹(DPI) Disabled People's International Korea"></a>
+			</div>
+			<div id="tnb">
+				<ul>
+										<li><a href="javascript:;"><b>로그인</b></a></li>
+					<li><a href="javascript:;">회원가입</a></li>
+									</ul>
+			</div>
+		</div>
+		<div id="hd_wrapper">
+			
+<nav id="gnb">
+	<h2>메인메뉴</h2>
+	<div class="gnb_wrap">
+		<ul id="gnb_1dul">
+						<li class="gnb_1dli " style="z-index:999">
+				<a href="javascript:;" target="_self" class="gnb_1da ">한국DPI는</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 한국DPI는</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 지역연맹</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 가맹</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 오시는길</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:998">
+				<a href="javascript:;" target="_self" class="gnb_1da ">사업소개</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 사업소개</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:997">
+				<a href="javascript:;" target="_self" class="gnb_1da ">활동과이슈</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 공지사항</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 활동소식</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 포토갤러리</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 장애계 주요이슈</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:996">
+				<a href="javascript:;" target="_self" class="gnb_1da ">커뮤니티</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 자유게시판</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 자료실</a></li>
+				</ul>
+			</li>
+						<li class="gnb_1dli " style="z-index:995">
+				<a href="javascript:;" target="_self" class="gnb_1da ">참여</a>
+				<span class="bg">하위분류</span><ul class="gnb_2dul">
+					<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 회원안내 및 가입</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 후원안내 및 가입</a></li>
+									<li class="gnb_2dli"><a href="javascript:;" target="_self" class="gnb_2da">- 지역연맹 후원안내</a></li>
+				</ul>
+			</li>
+					</ul>
+		<div id="gnb_all">
+			<h2>전체메뉴</h2>
+			<ul class="gnb_al_ul">
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">한국DPI는</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 한국DPI는</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 지역연맹</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 가맹</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 오시는길</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">사업소개</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 사업소개</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">활동과이슈</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 공지사항</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 활동소식</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 포토갤러리</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 장애계 주요이슈</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">커뮤니티</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 자유게시판</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 자료실</a></li>
+					</ul>
+				</li>
+								<li class="gnb_al_li">
+					<a href="javascript:;" target="_self" class="gnb_al_a">참여</a>
+					<ul>
+						<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 회원안내 및 가입</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 후원안내 및 가입</a></li>
+											<li><a href="javascript:;" target="_self"><i class="fa fa-caret-right" aria-hidden="true"></i> 지역연맹 후원안내</a></li>
+					</ul>
+				</li>
+							</ul>
+			<button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+		</div>
+	</div>
+</nav>		</div>
+
+	</div>
+</div>
+<!-- } 상단 끝 -->
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+<div id="wrapper">
+
+
+	<div id="container_wr">
+
+		<div id="main_container">
+			
+<style type="text/css">
+
+	#container_wr, #main_container{width:100%; margin-top:0;}
+	#ft{margin-top:0;}
+	/* MAIN BANNER */
+	.main-visual{position:relative; overflow:hidden; height:510px;}
+	.main-banner{position:relative; left:50%; margin-left:-1000px; width:2000px;}
+
+	/* PAGER */
+	.bx-wrapper .bx-pager { position: absolute; top: 30px; right: 330px; z-index: 51; }
+	.bx-wrapper .bx-pager.bx-default-pager a { background: #fff; text-indent: -9999px; display: block; width: 30px; height: 10px; margin: 10px 0px; outline: 0; -moz-border-radius: 13px; -webkit-border-radius: 13px; border-radius: 13px; }
+	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{ background: #505063; }
+	.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item { vertical-align: bottom; *zoom: 1; *display: inline; float: left;}
+	.bx-wrapper .bx-pager-item { font-size: 0; line-height: 0;}
+
+	/* DIRECTION CONTROLS (NEXT / PREV) */
+	.main-banner_btn-prev {left:22.5%;}
+	.main-banner_btn {background: none; border: 0; position: absolute; font-size: 40px; top: 50%; color: #fff; z-index: 99; text-shadow:1px 1px 1px #000;}
+	.main-banner_btn-next {right: 22.5%;}
+	.bx-wrapper .bx-controls-direction a { position: absolute; top: 60%; margin-top: -16px;  width: 15px; height: 20px; text-indent: -9999px; z-index: 9999; }
+	.bx-wrapper .bx-controls-direction a.disabled { display: none; }
+	.bx-next,.bx-prev {text-indent: -9999px; display:block; position:absolute; top:0; width:100%; height:100%;}
+
+	/* BOTTOM DIRECTION DONTROLS (NEXT / PREV) */
+	.main-banner2{position:relative; clear:both;}
+	.main-banner_btn-prev2 {left:0px;}
+	.main-banner_btn2 {background: none; border: 0; position: absolute; top: 15px;  z-index: 99;}
+	.main-banner_btn-next2 {left: 35px;}
+
+	/* AUTO CONTROLS (START / STOP) */
+	.bx-wrapper .bx-controls-auto { text-align: center; }
+	.bx-wrapper .bx-controls-auto .bx-start{display: block; margin: 0 3px; width:11px; height:17px; color:#fff; overflow:hidden;}
+	.bx-wrapper .bx-controls-auto .bx-start:before{content:"\f04b"; font-family:FontAwesome;}
+	.bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active, .bx-wrapper .bx-controls-auto .bx-start:focus { color:#00a7cb; }
+	.bx-wrapper .bx-controls-auto .bx-stop {display: inline-block; margin: 0 3px; width:12px; height:17px; color:#fff; overflow:hidden; }
+	.bx-wrapper .bx-controls-auto .bx-stop:before{content:"\f04c"; font-family:FontAwesome;}
+	.bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active, .bx-wrapper .bx-controls-auto .bx-stop:focus { color:#00a7cb }
+
+	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+    .bx-wrapper .bx-controls.bx-has-controls-auto{position: absolute; top: 20px; right: 740px; background: #262626; padding: 5px;}
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { text-align: center; width: 100%; }
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto { left: 50%; bottom: 97px; width: 37px; margin-left: -100px; z-index: 99; }
+
+	.main-banner2 .bx-wrapper .bx-controls.bx-has-controls-auto{right:90.3%; top:15px; padding:3px;} /* 하단 배너 재생/정지 */
+	.main-banner2 .bx-wrapper{margin:0 0 0 auto !important;}
+
+	/* IMAGE CAPTIONS */
+	.bx-wrapper .bx-caption { position: absolute; bottom: 0; left: 0; background: #666; background: rgba(80, 80, 80, 0.75); width: 100%; }
+	.bx-wrapper .bx-caption span { color: #fff; font-family: Arial; display: block; font-size: .85em; padding: 10px; }
+	.bx-next,.bx-prev {text-indent: -9999px; display:block; position:absolute; top:0; width:100%; height:100%;}
+
+	.bo_fx{position:absolute; bottom:10px; right:10px; z-index:99;}
+	.btn_bo_user{margin:10px auto;width:100px}
+	.btn_bo_user a{padding:7px 10px;}
+
+	/* 메인컨텐츠 간격 */
+	.main-gap50{margin:50px auto;}
+
+	/* 메인 컨텐츠 */
+	.main-visual .main-banner-tabs{position: absolute; top: 0; background: red; left: calc(50% - -280px); width: 270px; height:300px; display:flex; flex-direction:column;  }
+	.main-visual .main-banner-tabs a{height:75px; text-align:left; display:flex; align-items:center; border-bottom:1px solid #807272; background:#6a5b5b; color:#fff; padding:15px;}
+	.main-visual .main-banner-tabs  a.active, .main-visual .main-banner-tabs  a:hover{background-color:#ff6f61; color:#302625;}
+
+	.main-visual .main-banner-tabs2 {position: absolute; top: 300px; background: red; left: calc(50% - -280px); width: 270px; height:210px; display:flex; flex-direction:column; }
+	.main-visual .main-banner-tabs2 .txt1{font-size:17px; line-height:170%; font-weight:600;}
+	.main-visual .main-banner-tabs2  .txt2{font-size:28px; line-height:170%; font-weight:600; color:#ffc30c;}
+	.main-visual .main-banner-tabs2 li.support a{background:#505063;  display:block; height:210px; padding:15px; color:#fff;}
+	.main-visual .main-banner-tabs2 li.support:hover a{background:#6c6c86; color:#fff;}
+
+	.main-visual .main-banner-tabs2 .support p{font-size:13px;}
+	.main-visual .main-banner-tabs2 .support .support_btn{display: inline-block; background: #ffc30c; float: right; margin-right: -15px; padding: 10px 20px; border-radius:20px 0 0 20px; color:#505063; font-size:16px; margin-top:16px;}
+
+
+	/* 갤러리, 사업소개 최신글 타이틀 */
+	.main-center .b_tit{font-size:37px; line-height:120%; margin-bottom:20px; display:inline-block;}
+	.main-center .b_tit-small{display:inline-block; color:#666; margin-left:25px;}
+	.main-center2 .b_tit{font-size:37px; line-height:120%; margin-bottom:20px; display:inline-block;}
+	.main-center2 .b_tit:before{content:''; background:url("/theme/basic/img/pub/saup-tit-bg.png") no-repeat; background-size:cover; width:55px; height:55px; display:inline-block; margin-right:10px; vertical-align:middle;}
+	.main-center2 .b_tit a{vertical-align:middle;}
+
+	.main-center{width:1100px; margin:0 auto;}
+	.main-center2-wr{background:#f6f6f6;}
+	.main-center2{width:1100px; margin:0 auto; padding:50px 0;}
+	.main-center2 > div{width:calc(50% - 23px); height:560px; display:inline-block; vertical-align:top;}
+	.main-center2 .support{margin-left:41px; position:relative; }
+	.main-center2 .support:after{content:''; border:1px dashed #d2d2d2; display:block; height:100%; width:1px; position:absolute; top:0; right:calc(100% - -21px);}
+	.main-center2 .support img{max-width:100%;}
+	.main-center2 .support .support-img{width:528px; height:421px; overflow:hidden; display:inline-block;}
+	.main-center2 .support .support-img:hover img{transform: scale(1.06); transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;}
+
+	.main-center2 .support ul{padding:10px; background:#fff; border:1px solid #d2d2d2; overflow:hidden; margin-top:20px;}
+	.main-center2 .support ul li{width:25%; float:left; text-align:center;}
+	.main-center2 .support ul li h5{font-weight:normal; color:#656565; font-size:14px; margin-top:5px;}
+
+	.main-center3{width:1100px;}
+	.main-center3 > div{width:calc(50% - 23px); display:inline-block; vertical-align:top; border:1px solid #d2d2d2;}
+	.main-center3 .bbs6{margin-left:41px;}
+	.main-center3 .bbs5 .b_tit a{color:#2763bb;}
+	.main-center3 .bbs6 .b_tit a{color:#258179;}
+
+	.main-center3 .bbs5 .lt_more{background:#2763bb; border-color:#2763bb;}
+	.main-center3 .bbs6 .lt_more{background:#258179; border-color:#258179;}
+
+	.main-bottom{width:1100px;}
+</style>
+
+
+
+
+<div class="main-visual">
+
+	<div class="main-banner">
+		<ul id="bnSlider">
+						<li>
+															<img src="./img/banner1.png" alt="한국장애인연맹 DPI KOREA 장애인의 완전한 참여와 기회균등 '한국장애인연맹(DPI Korea)은 세계장애인연맹(Disabled People’s International, DPI) 산하 조직으로, 장애인의 완전한 사회참여와 기회균등, 권익실현을 목표로 활동하고 있는 장애인당사자 단체입니다.'">
+												</li>
+						<li>						<img src="./img/banner2.jpg" alt="since2000 감수성은 더하고+ 편견은 빼자- 2019. 11. 7(목)~11.10(일) 김만덕기념관(1층 나눔문화관) 20th 제주국제장애인 인권영화제 20th JEJU International Disabled Peoples's Human Rights Film Festival">						</li>
+						<li>
+											<img src="./img/banner3.jpg" alt="유엔장애인권리위원 초청 장애인권리협약 민간보고서 공청회 일시 2019. 10. 28.(월) 13:00~18:00 장소 여의도 이룸센터 이룸홀">			</li>
+						<li>
+								<img src="./img/banner4.png" alt="한국장애인연맹은 직장 내 장애인 인식개선 교육기관입니다. 장애인 동료와 함께하는 슬기로운 직장생활 직장 내 장애인 인식개선 교육  #모든 사업주 및 근로자 연1회, 1시간 의무이수(법정교육) #문의 : 02-457-0427">				</li>
+					</ul>
+	</div>
+
+	<div class="main-banner-tabs">
+					<a data-slide-index="0" href="" class="on">○ 한국장애인연맹</a>
+					<a data-slide-index="1" href="" class="on">○ 20th 제주국제장애인 인권영화제</a>
+					<a data-slide-index="2" href="" class="on">○ 장애인권리협약 민간보고서 공청회</a>
+					<a data-slide-index="3" href="" class="on">○ 직장 내 장애인 인식개선 교육</a>
+
+	</div>
+
+	<ul class="main-banner-tabs2">
+		<li class="support"><a href="javascript:;">
+			<strong class="txt1">모두가 함께 나누는 따뜻한 마음</strong>
+			<strong class="txt2">후원참여</strong>
+			<p>따뜻한 마음을 모두 함께 나누어보세요.<br>사랑을 함께 나누면 행복이 두배가 됩니다.</p>
+			<span class="support_btn">후원 신청하기</span>
+		</a></li>
+	</ul>
+
+	
+</div>
+
+<div class="main-center" id="m_container">
+	<div class="bbs-wrap">
+		<div class="bbs1 main-gap50">
+			<h3 class="b_tit"><a href="javascript:;">활동소식</a></h3> <span class="b_tit-small">가장 최근 활동소식을 보실 수 있습니다.</span>
+			
+<div class="pic_lt">
+	<ul>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/thumb-4afb0bdf3259459c14841d81116bff5a_1562291374_8953_220x220.jpg" alt="장애인권리협약의 이행 증진을 위한 토론회" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> 장애인권리협약의 이행 증진을 위한 토론회 </span>			</a>
+			<span class="lt_date">07-05</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/thumb-4282ac8589abf0304ba65575ac913e48_1561342045_7761_220x220.jpg" alt="2019년 한국장애인연맹 중앙 사무처 직원 워크숍" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> 2019년 한국장애인연맹 중앙 사무처 직원 워… </span>			</a>
+			<span class="lt_date">06-24</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/thumb-1d5faa521707806680dd6408017d8958_1560863897_0412_220x220.jpg" alt="사)한국장애인연맹 신임회장 비전선포&취임식" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> 사)한국장애인연맹 신임회장 비전선포&취임식 </span>			</a>
+			<span class="lt_date">04-10</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/thumb-20190328160513_acisppan_220x220.jpg" alt="한국장애인연맹 UN CRPD 그룹 스터디" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> 한국장애인연맹 UN CRPD 그룹 스터디 </span>			</a>
+			<span class="lt_date">03-28</span>
+		</li>
+			</ul>
+	<a href="javascript:;" class="lt_more"><span class="sound_only">활동소식</span>MORE<span class="sound_only"> 더보기</span></a>
+
+</div>
+		</div>
+		<div class="bbs2 main-gap50">
+			<h3 class="b_tit"><a href="javascript:;">주요이슈</a></h3> <span class="b_tit-small">가장 최근 주요이슈를 보실 수 있습니다.</span>
+			
+<div class="pic_lt">
+	<ul>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/no_img.png" alt="[보도자료] 제1회 장애인식개선교육 콘텐츠 공모전 개최" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> [보도자료] 제1회 장애인식개선교육 콘텐츠 공… </span>			</a>
+			<span class="lt_date">10-14</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/no_img.png" alt="[보도자료]장애인을 사람으로 대우하지 않는 대한민국, 장애인권리협약 이행으로 바꿔야 한다." width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> [보도자료]장애인을 사람으로 대우하지 않는 대… </span>			</a>
+			<span class="lt_date">10-07</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="https://dpikorea.org/s_wysiwyg/cheditor/attach/thumb-20190328142648_wlnzhvfc_220x220.jpg" alt="[보도자료] 유엔 장애인권리협약 NGO보고서 작성을 위한 NGO연대 워크숍 성료" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> [보도자료] 유엔 장애인권리협약 NGO보고서 … </span>			</a>
+			<span class="lt_date">03-28</span>
+		</li>
+			<li>
+
+			<a href="javascript:;" class="lt_img"  >
+				<span class="pic-img"><img src="./img/no_img.png" alt="[보도자료]80대기업 홈페이지 웹접근성 모니터링 사업 결과" width="220" height="220" class="no-img"></span>
+			</a>
+			<a href="javascript:;" class="lt_img"  >
+                <span class='lt_tit'> [보도자료]80대기업 홈페이지 웹접근성 모니터… </span>			</a>
+			<span class="lt_date">11-19</span>
+		</li>
+			</ul>
+	<a href="javascript:;" class="lt_more"><span class="sound_only">장애계 주요이슈</span>MORE<span class="sound_only"> 더보기</span></a>
+
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="main-center2-wr">
+	<div class="main-center2 main-gap50">
+		<div class="bbs3">
+			<h3 class="b_tit"><a href="javascript:;">사업소개</a></h3>
+			
+<div class="saup-pic_lt">
+	
+	<ul>
+			<li>
+							<span class="state_ing">진행중</span>
+			
+			<a href="javascript:;" class="lt_img"><img src="./img/thumb-6a142210a6d9f538648c63bd25215f6c_1572485834_6083_500x240.jpg" alt="정부는 장애인권리협약 선택의정서를 즉각 비준하라 현수막을 들고 있는 단체 모습을 정면으로 찍은 사진01" width="500" height="240"></a>
+			<a href="javascript:;" class='lt_tit'> UNCRPD NGO연대 장애인권리협약 민…</a>			<p class="lt_contents">
+				사업기간&nbsp;~ 2019년 10월29일사업목적○ 2019년 3월, 대한민국 정부에서 장애인권리협약 이행현황에 대해 국가보고서를 제출하였으며, UNCRPD(유엔장애인권리협약) NGO연대는 이에 대해 장애인 당사자의 의견을 담은 민간보고서를 작성하여 연말 유엔장애인권리위원회에 제출할 예정임. 관련하여 제출 전, 장애계와 현장의 의견을 적극 반영하여 본 보고서의 완성도를 제고하고자 함.19.10.28.(월) …				 			</p>
+			<a href="javascript:;" class="lt_more">상세보기</a>
+			</li>
+			</ul>
+
+</div>
+		</div>
+		<div class="bbs4 support">
+			<a href="javascript:;" class="support-img"><img src="./img/support.png" alt="share the love 2019 사랑나눔 캠페인 후원하기"></a>
+			<ul>
+				<li><a href="javascript:;"><img src="./img/support-under-icon.png" alt=""><h5>세계DPI</h5></a></li>
+				<li><a href="javascript:;"><img src="./img/support-under-icon.png" alt=""><h5>아태DPI</h5></a></li>
+				<li><a href="javascript:;"><img src="./img/support-under-icon.png" alt=""><h5>동북아DPI</h5></a></li>
+				<li><a href="javascript:;"><img src="./img/support-under-icon.png" alt=""><h5>유럽DPI</h5></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="main-center3 main-gap50">
+	<div class="bbs5">
+		
+<div class="lat">
+	<div class="lat_tit_wr">
+		<h3 class="b_tit"><a href="javascript:;">자유게시판</a></h3>
+		<a href="javascript:;" class="lt_more"><span class="sound_only">자유게시판</span>MORE<span class="sound_only"> 더보기</span></a>
+	</div>
+	<ul>
+			<li>
+			<a href="javascript:;"> 《무료교육나눔》제 2 커리어 개발…</a> <img src="./img/icon_new.gif" class="title_icon" alt="새글"> 			<span class="lt_date">11-19</span>
+		</li>
+			<li>
+			<a href="javascript:;"> 2020SIAT 청년장애인 IT인…</a> 			<span class="lt_date">10-24</span>
+		</li>
+			<li>
+			<a href="javascript:;"> 제1회 장애인식개선교육 콘텐츠(P…</a> 			<span class="lt_date">10-14</span>
+		</li>
+			<li>
+			<a href="javascript:;"> 2019 “여행을 꿈꾸다” 실시_…</a> 			<span class="lt_date">09-02</span>
+		</li>
+	
+		</ul>
+
+</div>	</div>
+	<div class="bbs6">
+		
+<div class="lat">
+	<div class="lat_tit_wr">
+		<h3 class="b_tit"><a href="javascript:;">자료실</a></h3>
+		<a href="javascript:;" class="lt_more"><span class="sound_only">자료실</span>MORE<span class="sound_only"> 더보기</span></a>
+	</div>
+	<ul>
+			<li>
+			<a href="javascript:;"> [한국장애인연맹] UNCRPD N…</a> 			<span class="lt_date">11-12</span>
+		</li>
+			<li>
+			<a href="javascript:;"> [자료집] 장애인권리협약 이행증진…</a> 			<span class="lt_date">07-04</span>
+		</li>
+			<li>
+			<a href="javascript:;"> [한국장애인연맹] 서울 국제세미나…</a> 			<span class="lt_date">03-28</span>
+		</li>
+			<li>
+			<a href="javascript:;"> [한국장애인연맹] 서울 국제세미나…</a> 			<span class="lt_date">03-28</span>
+		</li>
+	
+		</ul>
+
+</div>	</div>
+</div>
+
+<div class="main-bottom main-gap50">
+	<div class="main-banner2">
+		<div class="main-banner_btn2 main-banner_btn-prev2"><img src="./img/ft-prev.png" alt="이전"></div>
+		<div class="main-banner_btn2 main-banner_btn-next2"><img src="./img/ft-next.png" alt="다음"></div>
+
+		<ul id="bnSlider2-1">
+			<li><img src="https://dpikorea.org/data/banner2/1.png" alt="한국장애인재단"></li>
+			<li><img src="https://dpikorea.org/data/banner2/2.png" alt="사랑의열매"></li>
+			<li><img src="https://dpikorea.org/data/banner2/3.png" alt="한국장애인개발원"></li>
+			<li><img src="https://dpikorea.org/data/banner2/4.png" alt="고용노동부"></li>
+			<li><img src="https://dpikorea.org/data/banner2/5.png" alt="보건복지부"></li>
+			<li><img src="https://dpikorea.org/data/banner2/6.png" alt="국민연금"></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    /* 메인 배너 */
+    var bnSlider = $('#bnSlider').bxSlider({
+        //mode:'fade',
+        auto:true,
+        controls:true,
+        pause: 10000,
+		pager: true,
+        prevSelector: '.main-banner_btn-prev',
+        nextSelector: '.main-banner_btn-next',
+		pagerCustom:'.main-banner-tabs',
+        autoHover: true,
+        autoControls: true,
+		onSlideAfter: function($slideElement, oldIndex, newIndex){ //슬라이드 화살표 눌렀을때 멈춤현상 해결
+        bnSlider.startAuto();
+
+
+        }
+    });
+
+
+</script>
+
+<script type="text/javascript">
+
+	/* 하단 배너 */
+    var bnSlider2 = $('#bnSlider2-1').bxSlider({
+        auto:true,
+        controls:true,
+        pause: 3000,
+		pager: false,
+		slideWidth:163,
+		slideMargin : 40,
+		moveSlides: 1,
+		minSlides : 5,
+		maxSlides : 5,
+		autoControls: true,
+        prevSelector: '.main-banner_btn-prev2',
+        nextSelector: '.main-banner_btn-next2',
+		onSlideAfter: function($slideElement, oldIndex, newIndex){ //슬라이드 화살표 눌렀을때 멈춤현상 해결
+        bnSlider.startAuto();
+        }
+    });
+    
+
+
+</script>
+
+	</div>
+</div>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+	<div class="ft_link_wr">
+		<div id="ft_link">
+			<a href="javascript:;">이용약관</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">개인정보처리방침</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">장애인차별금지법</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">찾아오시는 길</a>
+		</div>
+	</div>
+	<div id="ft_wr">
+		<div id="ft_catch">
+			<div id="ft_logo">
+                    <img src="./img/ft_logo.png" alt="한국DPI(Disabled People's International Korea)">
+            </div>
+			<div id="ft_wr2">
+				<div id="ft_add"><p>사단법인 한국장애인연맹(DPI)&nbsp; |&nbsp; 대표 : 황광식&nbsp; |&nbsp; 고유번호 : 204-82-06164</p><p>주소 : 서울특별시 영등포구 의사당대로 22 이룸센터 4층 405호&nbsp;</p><p>TEL :&nbsp; 02-457-0427&nbsp; |&nbsp; FAX : 02-458-0429&nbsp; |&nbsp; E-mail : dpikorea@dpikorea.org&nbsp; |&nbsp; 개인정보담당자 : 박지수&nbsp;</p></div>
+				<div id="ft_copy">Copyright &copy; 2019 한국장애인연맹. All rights reserved.</div>
+			</div>
+			<div class="wa" style="float:right"><a href="javascript:;" ><img src="./img/wa.png" border="0" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"/></a></div>
+		</div>
+	</div>
+
+	<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+</div>
+
+<script>
+	$(function() {
+		$("#top_btn").on("click", function() {
+			$("html, body").animate({scrollTop:0}, '500');
+			return false;
+		});
+	});
+</script>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+	// 폰트 리사이즈 쿠키있으면 실행
+	font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+//모든 checkbox label에 탭인덱스 추가 (chk css none으로 체크가 안됨)
+$(function(){
+        $("input[type=checkbox] + label").attr("tabindex","0");
+});
+
+
+//모든 checkbox label에 탭인덱스 추가 (chk css none으로 체크가 안됨)
+$("input[type=checkbox] + label").on("keypress",function(){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+
+    if (keycode == 32) {
+
+
+        if ($(this).prev("input[type=checkbox]").prop('checked')) {            
+            $(this).prev("input[type=checkbox]").attr("checked",false);
+        }else{
+            $(this).prev("input[type=checkbox]").attr("checked",true);
+        }
+
+    }   
+
+    //allcheck id면 allcheck script 실행
+    var chkboxId = $(this).prev("input[type=checkbox]").attr("id");
+    
+
+    if(chkboxId == "chk_all"){
+
+        if ($(this).prev("input[type=checkbox]").prop('checked')) {
+            $("input[name^=agree]").prop('checked', true);
+        } else {
+            $("input[name^=agree]").prop('checked', false);
+        }
+
+    }
+
+    
+});
+
+
+</script>
+
+
+</body>
+</html>
